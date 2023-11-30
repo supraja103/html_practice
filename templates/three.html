@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Rotate</title>
+	<style>
+		body
+		{
+			background-color: black;
+		}
+		div
+		{
+			box-shadow:0 0 10px black ;
+			width:350px;
+			height:250px;
+			margin:60px auto;
+			border-radius:20px;
+			border:1px solid white;
+			overflow:hidden ;
+			position: relative;
+		}
+		div>img
+		{
+			width:inherit;
+			height:inherit;
+			border-radius:inherit;
+			filter:grayscale(100%);
+			transition: all 1s linear 1s;
+		}
+		div:hover
+		{
+			cursor: pointer;
+		}
+		div:hover>img
+		{
+			filter:grayscale(0%);
+			transition: scale(1.2,1.2);
+		}
+		div>#curtain
+		{
+			background-color: yellow;
+			position: absolute;
+			top: -60px;
+			left:0px ;
+			transition: all 1s linear 0s;
+		}
+		div:hover>#curtain
+		{
+			transform:translateY(-100%) ;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyJsU6aLUqdDObEMb7L3VHzsZUEHt5L72VwCizxlMrp_DOhQpeY68kcMmsl9cOHH-cNs&usqp=CAU"></img>
+		<div id="curtain"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing-page</title>
+	<style>
+		*
+		{
+			margin: 0px;
+		}
+		header
+		{
+			background:linear-gradient(45deg,orange,rgb(206,214,248),rgb(113,131,236));
+			padding:10px;
+			height: 70px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+		header>h1
+		{
+			color: blue;
+		}
+		header>#links>a
+		{
+			text-decoration: none;
+			margin: 20px;
+			background-color: white;
+			color: orange;
+			padding: 5px 10px;
+			border-radius: 10px;
+		}
+		header>#links>a:hover
+		{
+			box-shadow: 0 0 10px blue;
+		}
+		@media (min-width:0px) and (max-width:900px)
+		{
+			header
+			{
+				flex-direction: column;
+				height:90px ;
+			}
+			header>#links>a
+			{
+				position: relative;
+				top: -20px;
+			}
+		}
+		#landing-page
+		{
+			background: blue url("https://images.indiafantasy.com/wp-content/uploads/20220312161201/India-national-cricket-team1.jpg") no-repeat 0px 0px scroll;
+			background-size: cover;
+			color: white;
+			height: 100vh;
+		}
+		#landing-page>#wrapper
+		{
+			background-color: rgba(113,151,236,0.3);
+			height: inherit;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+		}
+		#landing-page>#wrapper>h1
+		{
+			font-size: 70px;
+		}
+		#landing-page>#wrapper>button
+		{
+			background-color: orange;
+			color: white;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Indian Legend Cricketers</h1>
+		<div id="links">
+			<a href="">sachin</a>
+			<a href="">SKY</a>
+			<a href="">dhoni</a>
+			<a href="">rohith sharma</a>
+		</div>
+	</header>
+	<div id="Landing-page">
+		<div id="wrapper">
+			<h1>Indian Team Is Unstoppable</h1>
+			<p>The India men's national cricket team, also known as Team India or the Men in blue, represents India in men's international cricket. It is governed by the Board of Control for Cricket in India, and is a Full Member of the International Cricket Council with Test, One Day International and Twenty20 International status.</p>
+			<button>Watch Asia Cup</button>
+		</div>
+	</div>
+</body>
+</html>
